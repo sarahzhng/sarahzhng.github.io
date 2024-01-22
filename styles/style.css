@@ -1,3 +1,18 @@
-p {
-    color:red;
+html { /*setting font elements for entire html file*/
+    font-size : 10px; /* makes it so that baseefont is 10px */
+    font-family: "Open Sans", sans-serif;
+
+} 
+
+/* specifying this for header1, list, and paragraph */
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
 }
