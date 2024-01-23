@@ -10,9 +10,10 @@ function show() {
   function setUserName() {
     var userName = prompt("Please enter your name:");
     if (userName) {
-      localStorage.setItem('name', userName);
-      document.getElementById('myHeading').innerHTML = 'Hello! Nice to Meet you, ' + userName;
+        localStorage.setItem('name', userName);
+        // Update the greeting message
+        myHeading.innerHTML = 'Hello! Nice to Meet you, ' + userName;
     }
-  }
+}
 
 
