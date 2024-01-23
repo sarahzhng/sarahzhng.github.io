@@ -12,7 +12,7 @@ if(!localStorage.getItem('name')) {
     setUserName();
   } else {
     let storedName = localStorage.getItem('name');
-    myHeading.innerHTML = 'Hello! Nice to Meet you! ' + storedName;
+    myHeading.innerHTML = 'Hello! Nice to Meet you ' + storedName + '!';
   }
 
 // onclick button to enter a different name 
