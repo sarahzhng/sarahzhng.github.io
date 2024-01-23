@@ -1,12 +1,12 @@
 
-// personalized welcome message 
-let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h2'); 
 
 // create function to set show photo
 function show() {
-    document.getElementById('image').style.display = "block";
-    document.getElementById('buttonshow').style.display = "none";
+    var sourceimage = "images/cat.jpeg";
+    var img = document.getElementById ('image')
+    img.src = sourceOfPicture.replace('90x90', '200x200');
+    img.style.display = "block"
   }
 
 // conditional block that initalizes the page 
