@@ -1,6 +1,6 @@
 html { /*setting font elements for entire html file*/
     font-size : 10px; /* makes it so that baseefont is 10px */
-    font-family: "Prata";
+    font-family: Times, "Times New Roman", Georgia, serif;
 
 } 
 
