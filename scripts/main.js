@@ -2,15 +2,15 @@
 
 const myImage = document.querySelector('img');
 
-myImage.oneclick = function() {
-    const mySrc = myImage.getAttribute('src');
-    if (mySrc === 'images/firefox.png') {
-        myImage.setAttribute('src', 'images/firefox2.png');
+myImage.onclick = function() {
+    let mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/firefox.png') {
+      myImage.setAttribute ('src','images/firefox2.png');
     } else {
-        myImage.setAttribute('src', 'images/firefox.png');
+      myImage.setAttribute ('src','images/firefox.png');
     }
-}
-
+  }
+  
 // personalized welcome message 
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1'); 
