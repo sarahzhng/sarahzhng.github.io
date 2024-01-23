@@ -1,29 +1,12 @@
-// adding image changer 
-
-const myImage = document.querySelector('img');
-
-myImage.onclick = function() {
-  let mySrc = myImage.getAttribute('src');
-  if(mySrc === 'images/firefox.png') {
-    myImage.setAttribute ('src','images/firefox2.png');
-  } else {
-    myImage.setAttribute ('src','images/firefox.png');
-  }
-}
 
 // personalized welcome message 
 let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1'); 
+let myHeading = document.querySelector('h2'); 
 
-// create function to set peresonalized greeting 
-function setUserName() {
-    let myName = prompt('Please enter your name.');
-    if(!myName) {
-      setUserName();
-    } else {
-      localStorage.setItem('name', myName);
-      myHeading.innerHTML = 'Mozilla is cool, ' + myName;
-    }
+// create function to set show photo
+function show() {
+    document.getElementById('image').style.display = "block";
+    document.getElementById('buttonshow').style.display = "none";
   }
 
 // conditional block that initalizes the page 
@@ -31,7 +14,7 @@ if(!localStorage.getItem('name')) {
     setUserName();
   } else {
     let storedName = localStorage.getItem('name');
-    myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
+    myHeading.innerHTML = 'Hello! Nice to Meet you!' + storedName;
   }
 
 // onclick button to enter a different name 
