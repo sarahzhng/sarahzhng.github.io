@@ -4,7 +4,6 @@ html { /*setting font elements for entire html file*/
 
 } 
 
-
 /* specifying this for header1, list, and paragraph */
 
 h1 {
@@ -20,20 +19,20 @@ li {
 }
 
 html {/*changing page color*/
-    background-color: #a4cdee;
+    background-color: #ddd3c7;
 }
 
 body {
     width: 600px;
     margin: 0 auto;
-    color : #8b80dc;
+    color : #9c9287;
     padding: 0 20px 20px 20px;
 }
 
 h1 {
     margin: 0;
     padding: 20px 0;
-    color: #8b80dc;
+    color: #9c9287;
   }
   
 
