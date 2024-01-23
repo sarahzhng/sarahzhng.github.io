@@ -1,6 +1,6 @@
 html { /*setting font elements for entire html file*/
     font-size : 10px; /* makes it so that baseefont is 10px */
-    font-family: "Open Sans", sans-serif;
+    font-family: "Prata", sans-serif;
 
 } 
 
@@ -26,8 +26,7 @@ html {/*changing page color*/
 body {
     width: 600px;
     margin: 0 auto;
-    color : #8b80dc
-    background-color: #ffffff;
+    color : #8b80dc;
     padding: 0 20px 20px 20px;
 }
 
