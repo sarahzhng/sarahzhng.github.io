@@ -2,7 +2,7 @@
 
 const myImage = document.querySelector("img");
 
-myImage.oneclick = () => {
+myImage.oneclick = function() {
     const mySrc = myImage.getAttribute("src");
     if (mySrc === "image/firefox.png") {
         myImage.setAttribute("src", "images/firefox2.png");
@@ -36,7 +36,7 @@ if (!localStorage.getItem("name")) {
 }
 
 // onclick button to enter a different name 
-myButton.oneclick = () => {
+myButton.oneclick = function() {
     setUserName();
 };
 
