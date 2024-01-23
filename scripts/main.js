@@ -12,31 +12,30 @@ myImage.oneclick = function() {
 }
 
 // personalized welcome message 
-
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1'); 
 
 // create function to set peresonalized greeting 
-function setUserName(){
-    const myName = prompt('please enter your name:');
-    if (!myName){
-        setUserName();
+function setUserName() {
+    let myName = prompt('Please enter your name.');
+    if(!myName) {
+      setUserName();
     } else {
-        localStorage.setItem('name', myName);
-        myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+      localStorage.setItem('name', myName);
+      myHeading.innerHTML = 'Mozilla is cool, ' + myName;
     }
-}
+  }
 
 // conditional block that initalizes the page 
-if (!localStorage.getItem('name')) {
+if(!localStorage.getItem('name')) {
     setUserName();
-} else {
-    const storedName = localStorage.getItem('name');
+  } else {
+    let storedName = localStorage.getItem('name');
     myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
-}
+  }
 
 // onclick button to enter a different name 
-myButton.oneclick = function() {
+myButton.onclick = function() {
     setUserName();
-};
+  }
 
