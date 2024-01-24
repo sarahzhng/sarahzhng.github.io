@@ -12,7 +12,7 @@ function show() {
     if (userName) {
         localStorage.setItem('name', userName);
         // Update the greeting message
-        myHeading.innerHTML = 'Hello! Nice to Meet you, ' + userName;
+        myHeading.innerHTML = 'Hello! Nice to meet you, ' + userName;
     }
 }
 
